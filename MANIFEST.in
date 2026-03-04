@@ -1,0 +1,7 @@
+include README.md
+include LICENSE.txt
+include moe.nyarchlinux.tourqt.desktop
+include moe.nyarchlinux.tourqt.metainfo.xml
+include moe.nyarchlinux.tourqt.svg
+recursive-include src/nyarchtourqt/qml *.qml
+recursive-include src/nyarchtourqt/pictures *.png *.svg *.webp

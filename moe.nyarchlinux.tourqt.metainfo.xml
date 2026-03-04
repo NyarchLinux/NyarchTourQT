@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>moe.nyarchlinux.tourqt</id>
+  <name>Nyarch Tour</name>
+  <summary>Explore Nyarch Linux features and tools</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="moe.nyarchlinux">
+    <name>Nyarch Linux</name>
+  </developer>
+  <description>
+    <p>Nyarch Tour is a post-installation feature tour for Nyarch Linux.</p>
+    <p>Built with Kirigami for KDE Plasma, it guides users through key Nyarch applications, customization options, and system tools with direct launch actions.</p>
+  </description>
+  <url type="homepage">https://nyarchlinux.moe</url>
+  <launchable type="desktop-id">moe.nyarchlinux.tourqt.desktop</launchable>
+  <provides>
+    <binary>nyarchtourqt</binary>
+  </provides>
+  <releases>
+    <release version="0.1.0" date="2026-03-04">
+      <description>
+        <p>Initial release of Nyarch Tour for KDE Plasma.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1" />
+</component>

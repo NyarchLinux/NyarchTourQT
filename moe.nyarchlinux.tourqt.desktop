@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Nyarch Tour
+GenericName=Feature Tour
+Comment=Explore Nyarch Linux features and tools
+Exec=nyarchtourqt
+Icon=moe.nyarchlinux.tourqt
+Categories=Qt;KDE;Utility;System;
+StartupNotify=true
+X-KDE-FormFactor=desktop;tablet;handset;
