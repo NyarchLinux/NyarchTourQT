@@ -8,6 +8,7 @@ import subprocess
 import shlex
 from PySide6.QtCore import QObject, Slot
 from PySide6.QtQml import QmlElement
+import os 
 
 QML_IMPORT_NAME = "moe.nyarchlinux.tourqt"
 QML_IMPORT_MAJOR_VERSION = 1
@@ -20,11 +21,34 @@ class Utils(QObject):
     def __init__(self, parent=None):
         super().__init__(parent)
 
+    def is_flatpak(self) -> bool:
+        """
+        Check if we are in a flatpak
+
+        Returns:
+            bool: True if we are in a flatpak
+        """
+        if os.getenv("container"):
+            return True
+        return False
+
+    def get_spawn_command(self) -> list:
+        """
+        Get the spawn command to run commands on the user system
+
+        Returns:
+            list: space diveded command  
+        """
+        if self.is_flatpak():
+            return ["flatpak-spawn", "--host"]
+        else:
+            return []
+    
     @Slot(str)
     def run_command(self, command: str) -> None:
         """Execute a command on the host system via flatpak-spawn"""
         try:
-            subprocess.Popen(["flatpak-spawn", "--host"] + shlex.split(command))
+            subprocess.Popen(self.get_spawn_command() + shlex.split(command))
         except Exception as e:
             print(f"Error running command '{command}': {e}")
 
@@ -39,7 +63,7 @@ class Utils(QObject):
             fi
             """
             result = subprocess.check_output(
-                ["flatpak-spawn", "--host", "bash", "-c", script]
+                self.get_spawn_command() + ["bash", "-c", script]
             ).decode("utf-8").strip()
             return result == "1"
         except Exception as e:
