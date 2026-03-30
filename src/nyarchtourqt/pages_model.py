@@ -44,7 +44,7 @@ _RAW_PAGES = [
         ]
     },
     {
-        "icon": "material_you_screenshot",
+        "icon": "plasma-mu-screenshots",
         "title": "Material You",
         "body": "Choose any waifu as your wallpaper! The desktop and application themes automatically adjust their colors to make you feel at home. This is achieved by a modified version of the Material You Gnome extension.",
         "buttons": [
@@ -57,7 +57,7 @@ _RAW_PAGES = [
         ]
     },
     {
-        "icon": "catgirldownloader-screenshots",
+        "icon": "catgirldownloaderqt-screenshots",
         "title": "Catgirl Downloader",
         "body": "This application satisfies one of the most important needs a weeb has: getting random pictures of cute cat girls whenever you want!",
         "buttons": [
@@ -108,7 +108,7 @@ _RAW_PAGES = [
 		]
 	},
     {
-        "icon": "software-screenshots",
+        "icon": "discover-screenshots",
         "title": "Need other apps?",
         "body": "Download your favorite applications from an extensive catalog of applications with Discover.",
         "buttons": [
@@ -121,7 +121,7 @@ _RAW_PAGES = [
         ]
     },
     {
-        "icon": "nyarchwizard-screenshots",
+        "icon": "nyarchwizardqt-screenshots",
         "title": "Need suggestions?",
         "body": "Nyarch Wizard will suggest some software to get you started with Nyarch Linux.",
         "buttons": [
@@ -147,7 +147,7 @@ _RAW_PAGES = [
         ]
     },
     {
-        "icon": "nyarchscripts-screenshots",
+        "icon": "nyarchscriptsqt-screenshots",
         "title": "Check out Nyarch Scripts",
         "body": "Nyarch Scripts offers some interesting and common terminal commands and scripts that can be executed with one click.",
         "buttons": [
@@ -160,7 +160,7 @@ _RAW_PAGES = [
         ]
     },
     {
-        "icon": "nyarchupdater-screenshots",
+        "icon": "nyarchupdaterqt-screenshots",
         "title": "Keep your system up to date",
         "body": "Nyarch Updater helps you to keep your system up to date and install Nyarch Linux updates.",
         "buttons": [
@@ -199,7 +199,7 @@ _RAW_PAGES = [
         ]
     },
     {
-        "icon": "gnome-screenshot",
+        "icon": "plasma-screenshots",
         "title": "Discover more about your desktop",
         "body": "Run Plasma Welcome to learn more about desktop customization",
         "buttons": [
