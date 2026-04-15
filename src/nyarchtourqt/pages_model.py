@@ -46,7 +46,7 @@ _RAW_PAGES = [
     {
         "icon": "plasma-mu-screenshots",
         "title": "Material You",
-        "body": "Choose any waifu as your wallpaper! The desktop and application themes automatically adjust their colors to make you feel at home. This is achieved by a modified version of the Material You Gnome extension.",
+        "body": "Choose any waifu as your wallpaper! The desktop and application themes automatically adjust their colors to make you feel at home. This is achieved by kde-material-you-colors",
         "buttons": [
             {
                 "label": "Open Settings",
@@ -201,7 +201,7 @@ _RAW_PAGES = [
     {
         "icon": "plasma-screenshots",
         "title": "Discover more about your desktop",
-        "body": "Run Plasma Welcome to learn more about desktop customization",
+        "body": "Run Plasma Welcome to learn more about desktop customization. On KDE Plasma you can add widgets and tweak every setting",
         "buttons": [
             {
                 "label": "Start Tour",
